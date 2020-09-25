@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="4" name="Failed suite [Staples Test Groups]">
+  <listeners>
+    <listener class-name="com.staples.qa.test.listeners.ExtentReportListener"/>
+    <listener class-name="com.staples.qa.test.listeners.TestAllureListener"/>
+  </listeners>
+  <test thread-count="5" verbose="4" name="grouping(failed)">
+    <classes>
+      <class name="com.staples.qa.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyHomePageAppLogo"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- com.staples.qa.tests.HomePageTest -->
+    </classes>
+  </test> <!-- grouping(failed) -->
+</suite> <!-- Failed suite [Staples Test Groups] -->
